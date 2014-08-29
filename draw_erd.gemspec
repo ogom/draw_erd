@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ogom@hotmail.co.jp"]
   spec.summary       = %q{Drawing the Entity-Relationship Diagram.}
   spec.description   = %q{Drawing the Entity-Relationship Diagram of Rails.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/ogom/draw_erd"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency 'rails'
+  spec.add_dependency 'rails-erd'
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'
