@@ -1,6 +1,6 @@
 # Draw ERD
 
-[![Build Status](https://travis-ci.org/ogom/draw_erd.png?branch=master)](https://travis-ci.org/ogom/draw_erd)
+[![Gem Version](https://badge.fury.io/rb/draw_erd.png)](https://rubygems.org/gems/draw_erd) [![Build Status](https://travis-ci.org/ogom/draw_erd.png?branch=master)](https://travis-ci.org/ogom/draw_erd)
 
 Drawing the Entity-Relationship Diagram of Rails.
 
@@ -25,6 +25,14 @@ Add this line to your config/routes.rb:
 ```
 mount DrawErd::Engine, at: '/rails/info/schemas'
 ```
+
+Draw by selecting the schemas:
+
+![]()
+
+## Use
+
+* [Rails ERD](https://github.com/voormedia/rails-erd)
 
 ## License
 
