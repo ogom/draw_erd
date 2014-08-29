@@ -7,8 +7,6 @@ end
 APP_RAKEFILE = File.expand_path("../spec/dummy/Rakefile", __FILE__)
 load 'rails/tasks/engine.rake'
 
-task default: :spec
-
 require 'bundler/gem_tasks'
 Bundler::GemHelper.install_tasks
 
@@ -18,3 +16,4 @@ RSpec::Core::RakeTask.new(:spec) do |task|
 end
 
 task test: :spec
+task default: :spec
