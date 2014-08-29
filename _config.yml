@@ -1,0 +1,14 @@
+---
+markdown: kramdown
+kramdown:
+  input: GFM
+pygments: true
+baseurl: "/draw_erd"
+encoding: UTF-8
+exclude:
+- README.md
+- vendor
+- tmp
+name: Draw ERD
+copyright: 2014, ogom
+theme: cosmo
