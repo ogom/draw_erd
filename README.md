@@ -28,7 +28,7 @@ mount DrawErd::Engine, at: '/rails/info/schemas'
 
 Draw by selecting the schemas:
 
-![]()
+![example_erd](http://ogom.github.io/draw_erd/assets/img/example_erd.png)
 
 ## Use
 

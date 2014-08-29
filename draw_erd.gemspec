@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ogom@hotmail.co.jp"]
   spec.summary       = %q{Drawing the Entity-Relationship Diagram.}
   spec.description   = %q{Drawing the Entity-Relationship Diagram of Rails.}
-  spec.homepage      = "https://github.com/ogom/draw_erd"
+  spec.homepage      = "http://ogom.github.io/draw_erd"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
