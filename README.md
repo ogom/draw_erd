@@ -1,5 +1,7 @@
 # Draw ERD
 
+[![Build Status](https://travis-ci.org/ogom/draw_erd.png?branch=master)](https://travis-ci.org/ogom/draw_erd)
+
 Drawing the Entity-Relationship Diagram of Rails.
 
 ## Installation
@@ -18,7 +20,11 @@ $ bundle
 
 ## Usage
 
-TODO: Write usage instructions here
+Add this line to your config/routes.rb:
+
+```
+mount DrawErd::Engine, at: '/rails/info/schemas'
+```
 
 ## License
 

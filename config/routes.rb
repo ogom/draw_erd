@@ -1,2 +1,3 @@
-Rails.application.routes.draw do
+DrawErd::Engine.routes.draw do
+  root 'diagram#index'
 end

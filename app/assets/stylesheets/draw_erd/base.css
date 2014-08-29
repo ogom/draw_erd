@@ -1,0 +1,41 @@
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: helvetica, verdana, arial, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+  white-space: pre-wrap;
+}
+
+h2 { padding-left: 10px; }
+
+#schema_table {
+  border-collapse: collapse;
+}
+
+#schema_table td {
+  padding: 0 30px;
+}
+
+#schema_table tr.bottom th {
+  padding-bottom: 10px;
+  line-height: 15px;
+}
+
+input.bottom {
+  font-size: 15px;
+  font-weight: bold;
+  border:none;
+  background:transparent;
+}
+
+div.schemas {
+  padding-top: 18px;
+  float:left;
+}
