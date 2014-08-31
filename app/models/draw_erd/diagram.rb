@@ -9,6 +9,19 @@ module DrawErd
         schemas.map! {|schema| schema.singularize.camelize}
         schemas.sort
       end
+
+      def reset_migrations
+        paths = ActiveRecord::Migrator.migrations_paths
+        paths.each do |path|
+          Dir.foreach(path) do |file|
+            if match_data = /^(\d{3,})_(.+)\.rb$/.match(file)
+              version = match_data[1].to_i
+              ActiveRecord::Migrator.run(:down, paths, version)
+              ActiveRecord::Migrator.run(:up, paths, version)
+            end
+          end
+        end
+      end
     end
 
     def initialize(path)
@@ -16,11 +29,11 @@ module DrawErd
       FileUtils.mkdir_p(@path)
     end
 
-    def create(title, domains=[])
+    def create(title, domains=[], attributes=[:foreign_keys, :content])
       only = domains.map {|domain| domain.to_sym}
       options = {
         filetype: :png,
-        attributes: [:foreign_keys, :primary_keys, :content],
+        attributes: attributes,
         title: title.to_s,
         only: only,
         filename: File.join(@path, title.to_s)

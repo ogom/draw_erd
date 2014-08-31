@@ -1,6 +1,8 @@
 module DrawErd
   class DiagramController < ::DrawErd::ApplicationController
     def index
+      @schemas = DrawErd::Diagram.schemas
+
       title = 'erd'
       path = 'draw-erd'
       @image_file = File.join(path, "#{title}.png")
@@ -10,8 +12,6 @@ module DrawErd
 
       diagram = DrawErd::Diagram.new(File.join('public', 'images', path))
       diagram.create(title, @domains)
-
-      @schemas = DrawErd::Diagram.schemas
     end
   end
 end

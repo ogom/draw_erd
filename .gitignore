@@ -1,7 +1,8 @@
 .bundle
-Gemfile.lock
 pkg
 tmp
+Gemfile.lock
+
 spec/dummy/db/*.sqlite3
 spec/dummy/db/*.sqlite3-journal
 spec/dummy/log/*.log

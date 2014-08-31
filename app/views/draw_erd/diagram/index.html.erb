@@ -18,9 +18,9 @@
       <% @schemas.each do |schema| %>
       <tr>
         <td>
-          <%= check_box :schemas, schema,
-              {checked: @domains.include?(schema), onclick: 'check_schema()'}, true, false %>
-          <%= schema %>
+          <%= check_box :schemas, schema, {id: "check_#{schema}", checked: @domains.include?(schema),
+              onclick: 'check_schema()'}, true, false %>
+          <%= label_tag "check[#{schema}]", schema %>
         </td>
       </tr>
       <% end %>

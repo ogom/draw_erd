@@ -20,7 +20,7 @@ $ bundle
 
 ## Usage
 
-Add this line to your config/routes.rb:
+Add this line to your `config/routes.rb`:
 
 ```
 mount DrawErd::Engine, at: '/rails/info/schemas'
