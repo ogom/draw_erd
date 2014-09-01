@@ -23,7 +23,7 @@ $ bundle
 Add this line to your `config/routes.rb`:
 
 ```
-mount DrawErd::Engine, at: '/rails/info/schemas'
+mount DrawErd::Engine, at: '/rails/draw/erd'
 ```
 
 Draw by selecting the schemas:
