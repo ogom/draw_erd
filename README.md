@@ -1,4 +1,4 @@
-# Draw ERD
+# DrawERD
 
 [![Gem Version](https://badge.fury.io/rb/draw_erd.png)](https://rubygems.org/gems/draw_erd) [![Build Status](https://travis-ci.org/ogom/draw_erd.png?branch=master)](https://travis-ci.org/ogom/draw_erd)
 
@@ -26,9 +26,9 @@ Add this line to your `config/routes.rb`:
 mount DrawErd::Engine, at: '/rails/draw/erd'
 ```
 
-Draw by selecting the schemas:
+Draw by selecting the models:
 
-![example_erd](http://ogom.github.io/draw_erd/assets/img/example_erd.png)
+![example](http://ogom.github.io/draw_erd/assets/img/example.png)
 
 ## Use
 

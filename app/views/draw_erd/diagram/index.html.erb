@@ -1,14 +1,11 @@
-<h2>Schemas</h2>
+<h2>Models</h2>
 <p>Drawing the Entity-Relationship Diagram</p>
 
 <div class='schemas'>
   <%= form_tag({}, method: :get, name: 'form_schema') do %>
   <table id='schema_table' class='schema_table'>
     <thead>
-      <tr>
-        <th>Schema</th>
-      </tr>
-       <tr class='bottom'>
+      <tr class='bottom'>
         <th>
           <%= submit_tag :draw, class: 'bottom' %>
         </th>
