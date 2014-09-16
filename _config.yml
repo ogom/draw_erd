@@ -9,6 +9,6 @@ exclude:
 - README.md
 - vendor
 - tmp
-name: Draw ERD
+name: DrawERD
 copyright: 2014, ogom
 theme: cosmo

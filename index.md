@@ -30,9 +30,9 @@ Add this line to your config/routes.rb:
 mount DrawErd::Engine, at: '/rails/draw/erd'
 ```
 
-Draw by selecting the schemas:
+Draw by selecting the models:
 
-![example_erd]({{ site.baseurl }}/assets/img/example_erd.png)
+![example]({{ site.baseurl }}/assets/img/example.png)
 
 ## Use
 
