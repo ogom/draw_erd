@@ -29,12 +29,12 @@ module DrawErd
       FileUtils.mkdir_p(@path)
     end
 
-    def create(title, domains=[], attributes=[:foreign_keys, :content])
+    def create(title, domains=[], attributes=false)
       only = domains.map {|domain| domain.to_sym}
       options = {
         filetype: :png,
         attributes: attributes,
-        title: title.to_s,
+        title: false,
         only: only,
         filename: File.join(@path, title.to_s)
       }

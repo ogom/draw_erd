@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency 'rails'
-  spec.add_dependency 'rails-erd'
+  spec.add_dependency 'rails-erd', '~> 1.1.0'
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'
